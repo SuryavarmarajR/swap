@@ -1,8 +1,8 @@
 <?php
 //connect to mysql
-$linksql = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "mysql");
+$conn = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "mysql");
 //check connection
-if($linksql === false){
+if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
