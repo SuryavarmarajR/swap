@@ -72,11 +72,11 @@
 		</div>
 		<input type="text" name="username" placeholder="Username" class="loginInput" required />
 		<input type="password" name="password" placeholder="Password" class="loginInput" required />
-		<a onclick="window.location='/swap/forgotpasswordform.php'" class="forgetPasswordButton">Forgot password?</a>
+		<a onclick="window.location='/forgotpasswordform.php'" class="forgetPasswordButton">Forgot password?</a>
 		<button class="signInButton">Sign in</button>
 		<div style="text-align: center; margin-top: 15px;">
 			<small>Don't have an account?</small>
-			<a onclick="window.location='/swap/signupform.php'" class="signUpButton"><small>Create account</small></a>
+			<a onclick="window.location='/signupform.php'" class="signUpButton"><small>Create account</small></a>
 		</div>
 
 	</form>
