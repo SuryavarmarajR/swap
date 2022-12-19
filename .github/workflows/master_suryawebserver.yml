@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'SuryaWebserver'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6D098EB8B1144FA9B8E888A4B3EE360E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B6CD6A85C8DA4757BC28457916D22533 }}
           package: .
