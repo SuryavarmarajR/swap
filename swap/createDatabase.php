@@ -1,14 +1,9 @@
 <?php
-$host = 'suryadb.mysql.database.azure.com';
-$username = 'SuryaAdmin';
-$password = 'Gundam@2017';
-$db_name = 'storedb';
-
-//Establishes the connection
-$conn = mysqli_init();
-mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
-if (mysqli_connect_errno($conn)) {
-die('Failed to connect to MySQL: '.mysqli_connect_error());
+//connect to mysql
+$linksql = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "storedb");
+//check connection
+if($linksql === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
 //create schema
