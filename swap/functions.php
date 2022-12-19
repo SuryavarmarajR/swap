@@ -1,9 +1,9 @@
 <?php
 function pdo_connect_mysql() {
     // Update the details below with your MySQL details
-    $DATABASE_HOST = 'localhost';
-    $DATABASE_USER = 'root';
-    $DATABASE_PASS = '';
+    $DATABASE_HOST = "suryadb.mysql.database.azure.com";
+    $DATABASE_USER = "SuryaAdmin";
+    $DATABASE_PASS = "Gundam@2017";
     $DATABASE_NAME = 'storedb';
     try {
     	return new PDO('mysql:host=' . $DATABASE_HOST . ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);

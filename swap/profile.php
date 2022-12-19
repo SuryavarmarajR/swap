@@ -64,7 +64,7 @@
 </head>
 <body>
 <?php
-    $db = mysqli_connect('localhost', 'root', '') or
+    $db = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017") or
     die ('Unable to connect. Check your connection parameters.');
     mysqli_select_db($db, 'storedb' ) or die(mysqli_error($db));
     session_start();

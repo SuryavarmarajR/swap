@@ -11,7 +11,7 @@ if (isset($_SESSION['CREATED'])){
 		echo "<script>alert('Please sign in first'); window.location = '/swap/loginform.php';</script>";
 	}
     else{
-        $conn=mysqli_connect('localhost','root','',"storedb");
+        $conn=mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017","storedb");
         if(!$conn){
             die('Could not Connect My Sql:' .mysql_error());
         }

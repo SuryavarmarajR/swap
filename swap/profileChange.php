@@ -1,7 +1,7 @@
 <html>
 <?php
 session_start();
-$linksql = mysqli_connect("localhost", "root", "", "mysql");
+$linksql = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "mysql");
 $linkdb = mysqli_select_db($linksql, "storedb");
 $UID = $_SESSION['UID'];
 $firstname = $_POST['fname'];

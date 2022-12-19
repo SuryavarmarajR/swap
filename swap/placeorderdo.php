@@ -1,6 +1,6 @@
 <?php
 
-	$linksql = mysqli_connect("localhost", "root", "", "mysql");
+	$linksql = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "mysql");
 	$linkdb = mysqli_select_db($linksql, "storedb");
 	if (!$linksql){
 		die('could not connet:' . mysqli_connect_errno()); //return error if connection fail

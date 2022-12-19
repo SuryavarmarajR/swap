@@ -17,7 +17,7 @@ if (isset($_GET['id'])) {
     exit('Product does not exist!');
 }
 function addreview() {
-    $conn=mysqli_connect('localhost','root','',"storedb");
+    $conn=mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017","storedb");
     if(!$conn){
         die('Could not Connect My Sql:' .mysql_error());
     }

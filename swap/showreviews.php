@@ -4,9 +4,9 @@
 <body>
 
     <?php
-$servername='localhost';
-$username='root';
-$password='';
+$servername='suryadb.mysql.database.azure.com';
+$username='SuryaAdmin';
+$password='Gundam@2017';
 $dbname = "storedb";
 $conn=mysqli_connect($servername,$username,$password,"$dbname");
 if(!$conn){
