@@ -1,9 +1,9 @@
 <?php
 //connect to mysql
-$conn = mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017", "mysql");
+$conn = mysqli_connect('suryadb.mysql.database.azure.com', 'SuryaAdmin', 'Gundam@2017', 'mysql');
 //check connection
-if($conn === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+if(!$conn){
+  echo 'connection error'
 }
 
 //create schema
