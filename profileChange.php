@@ -13,6 +13,6 @@ $query= $linksql->prepare("UPDATE users SET user_firstname = ?, user_lastname = 
 user_number = ?, user_email = ?, user_address = ? WHERE UID = ?");
 $query->bind_param('ssissi', $firstname, $lastname, $phone_number, $email, $address, $UID); 
 $query->execute();
-echo "<script>alert('Successfully changed profile'); window.location = '/swap/index.php';</script>";
+echo "<script>alert('Successfully changed profile'); window.location = '/index.php';</script>";
 ?>
 <html>

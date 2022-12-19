@@ -106,7 +106,7 @@
         </div>
         <div class="signInFormBoxSeperator">
         <input type="submit" value="Submit" class="submitButton">
-        <a onclick="window.location='/swap/logout.php'" class="logOutButton">Log out</a>
+        <a onclick="window.location='/logout.php'" class="logOutButton">Log out</a>
     </div>
   </form>
 </body>

@@ -97,7 +97,7 @@ function checkSession(){
 	    if (time() - $_SESSION['CREATED'] > 100){
             session_unset();
             session_destroy();
-            echo "<script>alert('Your session has expired! Please Sign in again'); window.location = '/swap/loginform.php';</script>";
+            echo "<script>alert('Your session has expired! Please Sign in again'); window.location = '/loginform.php';</script>";
             //echo "<script>confirm('Your session is expiring, do you want to extend it?')</script>";
             //echo "$extend";
             //if($extend == "cancel"){

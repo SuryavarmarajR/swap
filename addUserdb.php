@@ -63,7 +63,7 @@
     	$query->bind_param('ssssssiss', $username, $firstName, $lastName, $email, $address, $gender, $number, $password, $role); 
 		$query->execute();
 		mysqli_close($linksql);
-		echo "<script>alert('Account Created Successfully!'); window.location = '/swap/loginform.php';</script>";
+		echo "<script>alert('Account Created Successfully!'); window.location = '/loginform.php';</script>";
 	}
 ?>
 </html>

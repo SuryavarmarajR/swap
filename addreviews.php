@@ -4,11 +4,11 @@ if (isset($_SESSION['CREATED'])){
 	if (time() - $_SESSION['CREATED'] > 100){
 	session_unset();
 	session_destroy();
-	echo "<script>alert('Your session has expired! Please Sign in again'); window.location = '/swap/loginform.php';</script>";
+	echo "<script>alert('Your session has expired! Please Sign in again'); window.location = '/loginform.php';</script>";
 	}
 	if (!isset($_SESSION["username"]))
     {
-		echo "<script>alert('Please sign in first'); window.location = '/swap/loginform.php';</script>";
+		echo "<script>alert('Please sign in first'); window.location = '/loginform.php';</script>";
 	}
     else{
         $conn=mysqli_connect("suryadb.mysql.database.azure.com", "SuryaAdmin", "Gundam@2017","storedb");

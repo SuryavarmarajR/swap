@@ -28,7 +28,7 @@ if (isset($_SESSION['CREATED'])){
 	if (time() - $_SESSION['CREATED'] > 100){
 	session_unset();
 	session_destroy();
-	header('Location: /swap/expiredsession.php');
+	header('Location: /expiredsession.php');
 	}else {
 		echo "<pre><b>For authorised administrators only</b><br></pre>";
 
